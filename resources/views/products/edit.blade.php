@@ -9,6 +9,6 @@
     <input type="text" name="name" value="{{ $product->name }}" class="input input-bordered w-full" required>
     <textarea name="description" class="textarea textarea-bordered w-full">{{ $product->description }}</textarea>
     <input type="number" step="0.01" name="price" value="{{ $product->price }}" class="input input-bordered w-full" required>
-    <button type="submit" class="btn btn-primary">Update Product</button>
+    <button type="submit" class="btn btn-primary hover:p-2 hover:rounded-2xl hover:text-white  hover:bg-green-600">Update Product</button>
 </form>
 @endsection

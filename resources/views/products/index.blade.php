@@ -6,7 +6,7 @@
 <!-- Search -->
 <form method="GET" action="{{ route('products.index') }}" class="mb-6 flex gap-2">
     <input type="text" name="search" value="{{ $search ?? '' }}" placeholder="Search by name" class="input input-bordered flex-1">
-    <button type="submit" class="btn btn-primary">Search</button>
+    <button type="submit" class="btn btn-primary hover:p-2 hover:rounded-2xl hover:text-white  hover:bg-green-600">Search</button>
 </form>
 
 @if(session('success'))
@@ -27,7 +27,7 @@
             <form action="{{ route('products.destroy', $product) }}" method="POST" onsubmit="return confirm('Are you sure?');" class="flex-1">
                 @csrf
                 @method('DELETE')
-                <button type="submit" class="btn btn-sm btn-error w-full">Delete</button>
+                <button type="submit" class="btn btn-sm btn-error w-full hover:p-2 hover:rounded-2xl hover:text-white  hover:bg-red-600">Delete</button>
             </form>
         </div>
     </div>
